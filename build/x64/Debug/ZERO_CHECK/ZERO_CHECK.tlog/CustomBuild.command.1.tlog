@@ -1,0 +1,10 @@
+^D:\CODE\HELLOWORLD\BUILD\CMAKEFILES\E345BAF9A89C18FDD1FEFA640C3A0201\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/CODE/helloworld -BD:/CODE/helloworld/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/CODE/helloworld/build/hellowold.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
